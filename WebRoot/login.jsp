@@ -168,7 +168,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 				<div class="featured">
 					<h4>欢迎使用 <strong>溪风问卷.</strong> 开始您的问卷吧!它完全免费 <strong>FREE!</strong></h4>
-					<a href="#" class="blue-btn">登 陆</a>
+					<a href="view/weibo.jsp" class="blue-btn">登 陆</a>
 				</div>
 
 				<section class="cols">
