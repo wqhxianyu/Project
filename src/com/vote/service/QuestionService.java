@@ -42,6 +42,11 @@ public class QuestionService {
 			dbcon.closeAll(con, stm, rs);
 		}
 	}
+	public boolean qurey(int oid,String content){
+		String sql = "select content from wj_question where oid = "+oid;
+		System.out.println(sql);
+		return false;
+	}
 	public int addQues(int oid, String content, int qtype, int seq ) {
 		DBConnection dbcon = null;
 		Connection con = null;

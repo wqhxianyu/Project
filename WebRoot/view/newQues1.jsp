@@ -21,6 +21,9 @@
 		<title>问卷管理系统</title>
 		<link type="text/css" rel="stylesheet" href="/vote/view/css/main.css" />
 		<script type="text/javascript">
+			alert("问卷问题有重复，请重新添加！！");
+		</script>
+		<script type="text/javascript">
 var textNumber = 1,sEle;
 	var qvalue=0;
 	function getSelect(){
@@ -61,7 +64,7 @@ textNumber--;
 }
     //提交
 	function submit(){
-	var myTable = document.getElementById("myTable");
+		var myTable = document.getElementById("myTable");
 		var rowCnt = myTable.rows.length;
 		var arrayObj = new Array();
 		for(var i = 4 ;i<=rowCnt;i++){
@@ -83,7 +86,6 @@ textNumber--;
 				}
 			}
 		}
-		
  		if(document.myForm.content.value.length==0)	{
  			alert("输入域 题目 不能为空");
  			document.myForm.content.focus();
@@ -160,7 +162,7 @@ textNumber--;
 						</label>
 					</td>
 					<td>
-						<input type="text" name="txt1" id="txt1" style="width:260px;"/> 分数 :<input type="text" name="score1" id="score1" style="width:15%;"/>
+						<input type="text" name="txt1" id="txt1" style="width:260px;"/> 分数 :<input type="text" name="score1" value="1" id="score1" style="width:15%;"/>
 					</td>
 				</tr>
 				<tr>
