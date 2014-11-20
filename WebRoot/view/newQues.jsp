@@ -49,7 +49,7 @@ function addTextBox(form, afterElement) {
 		var txtId = "txt" + textNumber;
 		var score = "score" + textNumber;
 		cellText.innerHTML = "<input type='text' name='" + txtName + "' id='" + txtId + "' style=\"width:260px;\"/>"+
-							 " 分数 :<input type='text' name='" + score + "' id='" + score + "' style=\"width:15%;\"/>";
+							 " 分数 :<input type='text' value=\"1\" name='" + score + "' id='" + score + "' style=\"width:15%;\"/>";
 }
 function removeTextBox(form) {
 		var myTable = document.getElementById("myTable");
@@ -67,10 +67,15 @@ textNumber--;
 		for(var i = 4 ;i<=rowCnt;i++){
 			var j = i-3;
 		    var name = document.getElementById("txt"+j).value;
+		    var score = document.getElementById("score"+j).value;
 		    if(name == ""){
 		    	alert("第"+j+"个选项为空！！");
 		    	return false;
-		    }else{
+		    }else if(score==""||score<0){
+		    	alert("第"+j+"个选项分数填写错误");
+		    	return false;
+		    }
+		    else{
 		    	arrayObj[j-1] = name;
 		    }
 		}

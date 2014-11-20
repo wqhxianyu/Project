@@ -385,7 +385,7 @@ if(objList.size()>0){
 		int oid=ob.getOid();
 		int state=ob.getState();
 		String base = null;
-		base = "问卷标题："+ob.getTitle()+"问卷地址："+basePath+"view/preview.jsp?oid="+oid;
+		base = "#调查问卷《"+ob.getTitle()+"》# 问卷地址："+basePath+"view/preview.jsp?oid="+oid;
 		String stateAlias = "";
 		if(state==0) stateAlias = "草稿";
 		if(state==1) stateAlias = "已发布";
@@ -399,7 +399,7 @@ if(objList.size()>0){
 	<td><%=sdf.format(ob.getCreateTime())%></td>
 	<td><%=ob.getName() %></td>
 	<td><a href="wjUpdate.jsp?oid=<%=oid%>">编辑</a> | <a href="#" onclick='preview_onClick2("<%=oid+","+state%>")'>预览</a> 
-	<%if(session.getAttribute("screen_name").equals("admin")==false) {%>| 
+	<%if(session.getAttribute("screen_name").equals("admin")==false&&state==1) {%> 
 	<wb:publish action="pubilish" type="web" language="zh_cn" button_type="red" button_size="middle" refer="y" appkey="u4F52" 
 	default_text="<%=base %>"></wb:publish><br>
 	<%} %>

@@ -49,6 +49,8 @@
 					ss.syscore(valuescore);
 					ss.addSelecter(oid, (count + 1), value, i,valuescore);
 			}
+		}else if(addQues==-1){
+			response.sendRedirect("newQues1.jsp?oid=" + oid);
 		}
 	}
 	response.sendRedirect("quesList.jsp?oid=" + oid);

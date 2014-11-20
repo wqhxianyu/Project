@@ -32,18 +32,18 @@
 <body>
 
 <h2 align="center">《排行榜》</h2>
-<div>
-	<a href="showResult2.jsp?oid=<%=oid%>">切换饼图显示</a>
-</div>
-<div>
-	<a href="showResult.jsp?oid=<%=oid%>">切换柱状图显示</a>
-</div>
 <center>
-<table width=600 align=center border="0" cellpadding="0" cellspacing="1">
+<table width=1050  border="0" cellpadding="0" cellspacing="1">
+	<tr>
+		<th width=200 algin="left"><a href="showResult2.jsp?oid=<%=oid%>">切换饼图显示</a></th>
+	</tr>
+	<tr>
+		<th width=200 algin="left"><a href="showResult.jsp?oid=<%=oid%>">切换饼图显示</a></th>
+	</tr>
 	<tr bgColor= #dedede>
-		<th width=200 align="center"> 排名 </th>
-		<th width=200 align="center"> Id </th>
-		<th width=200 align="center"> 分数 </th>
+		<th width=350 align="center"> 排名 </th>
+		<th width=350 align="center"> Id </th>
+		<th width=350 align="center"> 分数 </th>
 	</tr>
 <%
 	for(int i=0;i<replay.size();i++){

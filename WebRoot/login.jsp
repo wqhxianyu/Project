@@ -49,8 +49,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									<li class="active"><a href="#">home</a></li>
 									<li><a href="#">主 页</a></li>
 									<li href="#services" class="scroll"><a href="#">功能</a></li>
-									<li id="address"><a href="#">项目地址</a></li>
-									<li id="us"><a href="#">联系我们</a></li>
+									<li id="address"><a href="https://github.com/wqhxianyu/Project.git">项目地址</a></li>
+									<li id="us"><a href="http://blog.csdn.net/gaotianfeng6/article/details/39964123">联系我们</a></li>
 								</ul>
 								<div class="cl">&nbsp;</div>
 					</nav>
@@ -188,7 +188,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 					<div class="col">
 						<h3>项目的github地址</h3>
-						<p>hsdakjfhkj</p>
+						<p><a href="https://github.com/wqhxianyu/Project.git">https://github.com/wqhxianyu/Project.git</a></p>
 					</div>
 					<div class="cl">&nbsp;</div>
 				</section>

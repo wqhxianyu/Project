@@ -43,8 +43,26 @@ public class QuestionService {
 		}
 	}
 	public boolean qurey(int oid,String content){
+		DBConnection dbcon = null;
+		Connection con = null;
+		Statement stm = null;
+		ResultSet rs = null;
 		String sql = "select content from wj_question where oid = "+oid;
 		System.out.println(sql);
+		try {
+			dbcon=new DBConnection();
+			con=dbcon.getConnection();
+			stm=con.createStatement();
+			 rs = stm.executeQuery(sql);
+			 while(rs.next()){
+				 if(rs.getString("content").equals(content))
+					 return false;
+			}
+			 }catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				dbcon.closeAll(con, stm, rs);
+			}
 		return false;
 	}
 	public int addQues(int oid, String content, int qtype, int seq ) {
@@ -52,6 +70,7 @@ public class QuestionService {
 		Connection con = null;
 		Statement stm = null;
 		ResultSet rs = null;
+		if(qurey(oid,content)==false) return -1;
 		String sql = "insert into wj_question(oid,content,qtype,seq) values('"
 				+ oid + "','" + content + "','" + qtype + "','"
 				+ seq + "')";

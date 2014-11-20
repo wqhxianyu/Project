@@ -60,9 +60,9 @@ public class ChartUtil {
 			// 指定显示的饼图上圆形(false)还椭圆形(true)
 			plot.setCircular(true);
 			// 定义字体格式
-			Font font1 = new Font("SansSerif", 10, 20); // 设定字体、类型、字号
+			Font font1 = new Font("WenQuanYi Zen Hei", 10, 20); // 设定字体、类型、字号
 			chart.getTitle().setFont(font1); // 标题
-			Font font2 = new Font("SansSerif", 10, 16); // 设定字体、类型、字号
+			Font font2 = new Font("WenQuanYi Zen Hei", 10, 13); // 设定字体、类型、字号
 			TextTitle title = new TextTitle(titleName);
 			title.setFont(font1);
 			plot.setLabelFont(font2);
