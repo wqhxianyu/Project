@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 
 /**
  * the vote's state
- * 问卷的基本信息
+ * 
  * @author Administrator
  * 
  */
