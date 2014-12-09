@@ -24,7 +24,7 @@
 %>
 <html>
 	<head>
-		<title>问卷管理系统</title>
+		<title>更新问卷内容</title>
 		<link type="text/css" rel="stylesheet" href="/vote/view/css/main.css" />
 		<script type="text/javascript">
 		var qvalue=0;
