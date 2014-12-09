@@ -14,7 +14,7 @@ import org.jfree.chart.plot.PiePlot3D;
 import org.jfree.chart.title.TextTitle;
 import org.jfree.data.general.DefaultPieDataset;
 import org.jfree.data.general.PieDataset;
-
+//饼状图生成
 public class PieChartPicture {
 	public static void main(String[] args) {
 		PieDataset dataset = getDataSet();
