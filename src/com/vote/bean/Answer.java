@@ -2,7 +2,7 @@ package com.vote.bean;
 
 /**
  * get answer's id and so on
- * this is the answer
+ * 
  * @author Administrator
  * 
  */
