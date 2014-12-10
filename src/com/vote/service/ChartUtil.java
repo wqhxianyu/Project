@@ -61,6 +61,7 @@ public class ChartUtil {
 			plot.setCircular(true);
 			// 定义字体格式
 			Font font1 = new Font("SansSerif", 10, 20); // 设定字体、类型、字号
+			//肢体在SAE上出现乱码现象
 			chart.getTitle().setFont(font1); // 标题
 			Font font2 = new Font("SansSerif", 10, 16); // 设定字体、类型、字号
 			TextTitle title = new TextTitle(titleName);
