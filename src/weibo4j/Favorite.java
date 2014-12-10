@@ -301,24 +301,6 @@ public class Favorite extends Weibo {
 	}
 
 	/**
-	 * 取消收藏一条微博
-	 * 
-	 * @param 要取消收藏的微博ID
-	 * @return Favorites status
-	 * @throws WeiboException
-	 *             when Weibo service or network is unavailable
-	 * @version weibo4j-V2 1.0.0
-	 * @see http://open.weibo.com/wiki/2/favorites/destroy
-	 * @since JDK 1.5
-	 */
-	public Favorites destroyFavorites(String id) throws WeiboException {
-		return new Favorites(client.post(WeiboConfig.getValue("baseURL")
-				+ "favorites/destroy.json",
-				new PostParameter[] { new PostParameter("id", id) },
-				access_token));
-	}
-
-	/**
 	 * 批量删除收藏
 	 * 
 	 * @param ids
