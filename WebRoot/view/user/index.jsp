@@ -41,7 +41,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	String chk="true";
 	    session.setAttribute("Enter",chk);
 	    session.setAttribute("userName",fuck.getid());
-	    //response.sendRedirect("../index.jsp");
+	    //重新定位到微博授权页面
     	response.sendRedirect("weibo.jsp"); 
      %>
   </body>
