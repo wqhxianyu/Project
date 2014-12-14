@@ -1,4 +1,4 @@
-﻿<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
 <%@page import="java.sql.*"%>
 <%@page import="com.vote.service.*"%>
@@ -54,6 +54,8 @@
 				ss.syscore(valuescore);
 				ss.addSelecter(oid, (qseq+1), value, i,valuescore);
 			}
+		}else if(addQues==-1){
+			response.sendRedirect("newQues1.jsp?oid=" + oid);
 		}
 	}
 	response.sendRedirect("quesList.jsp?oid="+ oid);
