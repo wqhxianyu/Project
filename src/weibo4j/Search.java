@@ -174,31 +174,6 @@ public class Search extends Weibo {
 						access_token));
 	}
 
-	/**
-	 * 搜索学校时的联想搜索建议
-	 * 
-	 * @param q
-	 *            搜索的关键字，必须做URLencoding
-	 * @param count
-	 *            返回的记录条数，默认为10
-	 * @param type
-	 *            学校类型，0：全部、1：大学、2：高中、3：中专技校、4：初中、5：小学，默认为0
-	 * @return
-	 * @throws WeiboException
-	 *             when Weibo service or network is unavailable
-	 * @version weibo4j-V2 1.0.2
-	 * @see http://open.weibo.com/wiki/2/search/suggestions/schools
-	 * @since JDK 1.5
-	 */
-	public List<SchoolSearch> searchSuggestionsSchools(String q, int count,
-			int type) throws WeiboException {
-		return SchoolSearch.constructSchoolSearch(client.get(
-				WeiboConfig.getValue("baseURL")
-						+ "search/suggestions/schools.json",
-				new PostParameter[] { new PostParameter("q", q),
-						new PostParameter("count", count),
-						new PostParameter("type", type) }, access_token));
-	}
 
 	/**
 	 * 搜索学校时的联想搜索建议

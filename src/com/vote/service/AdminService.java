@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import com.vote.bean.AdminBean;
 
-//系统管理员的实体类
+
 public class AdminService {
 	
 	public AdminBean longin(String username,String password) throws Exception {
