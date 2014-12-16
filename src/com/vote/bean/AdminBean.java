@@ -2,7 +2,7 @@ package com.vote.bean;
 
 /**
  * username and password
- * 
+ * 管理员用户设置
  * @author Administrator get and set user and password
  */
 public class AdminBean {
